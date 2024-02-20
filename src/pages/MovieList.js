@@ -14,7 +14,7 @@ export const MovieList = ({ apiPath, title }) => {
     //const [prevPage, setPrevPage] = useState(1)
     const { data: movies } = useFetch(apiPath, page)
 
-    const pageTitle = useTitle(title)
+    useTitle(title)
 
 
 

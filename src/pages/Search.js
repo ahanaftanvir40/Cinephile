@@ -12,7 +12,7 @@ export const Search = ({ apiPath }) => {
     //console.log(queryTerm)
     const [page, setPage] = useState(1)
     const { data: movies } = useFetch(apiPath, page, queryTerm)
-    const pageTitle = useTitle(`Search Result for '${queryTerm}'`)
+    useTitle(`Search Result for '${queryTerm}'`)
 
     useEffect(() => {
         // Reset page number to 1 whenever the component is mounted or unmounted
