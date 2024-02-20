@@ -2,6 +2,7 @@ import { useTitle } from "../hooks"
 
 
 export const PageNotFound = ({ title }) => {
+    //eslint-disable-next-line
     const pageTitle = useTitle(title)
     return (
         <main>
