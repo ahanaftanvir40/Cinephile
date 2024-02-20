@@ -19,7 +19,7 @@ export const MovieDetails = () => {
             //console.log(data);
         }
         fetchDetails()
-    })
+    }, [params.id])
 
 
     return (
